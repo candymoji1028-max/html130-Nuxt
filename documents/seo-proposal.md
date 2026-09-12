@@ -1,5 +1,5 @@
 # SEO & Analytics Overview
-Search Engine Optimization (SEO) improve how easily search engines can understand, index, and rank a website. A well-structured site with clear headings, meaningful metadata, and high-quality content increase visibility in organic search results, which users trust more than paid placement. SEO also relies on semantic HTML, proper use of <h1>-<h6> tags, internal linking, and avoiding outdated tactics like hidden "ghost text".
+Search Engine Optimization (SEO) improve how easily search engines can understand, index, and rank a website. A well-structured site with clear headings, meaningful metadata, and high-quality content increase visibility in organic search results, which users trust more than paid placement. SEO also relies on semantic HTML, proper use of h1 - h6 tags, internal linking, and avoiding outdated tactics like hidden "ghost text".
 
 Analytics tools such as Google Analytics and heat maps provide insight into how users interact with a site. These tools reveal which pages attract the most traffic, where users click, and how they navigate through content. Understanding these patterns helps developers and marketing teams make informed decisions about layout, content placement, and user experience improvements.
 
