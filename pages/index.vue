@@ -60,8 +60,21 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useHead } from '#imports'
 
 const showMessage = ref(false)
+
+//SEO Metadata override
+useHead({
+  title: 'Home - Boba & Moji',
+  meta: [
+    {
+      key: 'description',
+      name: 'description',
+      content: 'Welcome to Boba & Moji Adventure - explore characters, stories, and fun surprises.'
+    }
+  ]
+})
 </script>
 
 <style scoped>

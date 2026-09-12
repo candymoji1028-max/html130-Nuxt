@@ -51,6 +51,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useHead } from '#imports'
 
 const countries = ref([])
 const loading = ref(true)
@@ -66,6 +67,18 @@ onMounted(async () => {
   } finally {
     loading.value = false
   }
+})
+
+//SEO metadata override
+useHead({
+  title: "Explore the World - Boba & Moji",
+  meta: [
+    {
+      key: "description",
+      name: "description",
+      content: "Discover countries Boba & Moji dream of visiting, including regions, capitals, populations, and fun details."
+    }
+  ]
 })
 </script>
 

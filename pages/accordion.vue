@@ -52,6 +52,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useHead } from '#imports'
 
 const accordion = ref({
   one: {
@@ -75,6 +76,18 @@ const accordion = ref({
       'The forest welcomes them with tall trees and a calm breeze that rustles the leaves overhead. Moji finds a perfect stick and proudly carries it as they explore deeper into the woods. Boba enjoys the peaceful sounds of nature, feeling grateful for another beautiful moment together.',
     show: false
   }
+})
+
+//SEO metadata override
+useHead({
+  title: "Adventure Stories - Boba & Moji",
+  meta: [
+    {
+      key: "description",
+      name: "description",
+      content: "Read Boba & Moji's adventure stories, including their beginning, garden discovery, and forest exploration."
+    }
+  ]
 })
 </script>
 

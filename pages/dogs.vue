@@ -36,6 +36,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useHead } from '#imports'
 
 const dogs = ref([])
 const loading = ref(true)
@@ -59,5 +60,17 @@ onMounted(async () => {
     /* Hide loading message */
     loading.value = false
   }
+})
+
+//SEO metadata override
+useHead({
+  title: "Dog Friends - Boba & Moji",
+  meta: [
+    {
+      key: "description",
+      name: "description",
+      content: "Meet Moji's dog friends from around the world, featuring breeds, origins, temperaments, and fun details."
+    }
+  ]
 })
 </script>

@@ -31,6 +31,8 @@
 </template>
 
 <script setup>
+import { useHead } from '#imports'
+
 const gridBoxes = [
   {
     icon: '🏠',
@@ -63,6 +65,18 @@ const gridBoxes = [
     description: 'A new surprise every day.'
   }
 ]
+
+// SEO metadata override
+useHead({
+  title: "Adventure Map - Boba & Moji",
+  meta: [
+    {
+      key: "description",
+      name: "description",
+      content: "Explore the Boba & Moji Adventure Map featuring key locations like Home Base, Garden Path, Riverbank, Meadow Friends, Forest Trail, and Adventure Spot."
+    }
+  ]
+})
 </script>
 
 <style scoped>

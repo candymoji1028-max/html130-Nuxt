@@ -28,6 +28,8 @@
 </template>
 
 <script setup>
+import { useHead } from '#imports'
+
 const photos = [
   { 
     src: '/images/1-boba-moji.png',
@@ -50,6 +52,18 @@ const photos = [
     title: 'Forest Bunny Friend'
   }
 ]
+
+//SEO metadata override
+useHead({
+  title: "Photo Adventrues - Boba & Moji",
+  meta: [
+    {
+      key: "description",
+      name: "description",
+      content: "Explore early concept art of Boba & Moji, featuring their home, friends, and magical world."
+    }
+  ]
+})
 </script>
 
 <style scoped>
